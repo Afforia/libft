@@ -6,7 +6,7 @@
 /*   By: thaley <thaley@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/06 18:50:19 by thaley            #+#    #+#             */
-/*   Updated: 2019/02/01 15:13:21 by thaley           ###   ########.fr       */
+/*   Updated: 2019/03/11 19:38:44 by thaley           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	i = 0;
 	if (s == NULL)
 		return (NULL);
-	else if (!(scp = ft_strnew(len - start)))
+	else if (!(scp = ft_strnew(len)))
 		return (NULL);
-	while (start < len)
+	while (i < len)
 	{
 		scp[i] = s[start];
 		start++;
